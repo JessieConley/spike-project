@@ -30,6 +30,7 @@ function App() {
         justifyContent: "center"
       }}
     >
+      <h1>Add Profile</h1>
       <input
         type="file"
         accept="image/*"
@@ -41,26 +42,31 @@ function App() {
       />
       <div
         style={{
-          height: "200px",
-          width: "200px",
+          height: "150px",
+          width: "150px",
           border: "1px solid black"
         }}
         onClick={() => imageUploader.current.click()}
       >
         <img
-        placeholder="Profile Image"
+          placeholder="Profile Image"
           ref={uploadedImage}
           style={{
-            width: "200px",
-            height: "200px",
+            width: "150px",
+            height: "150px",
             position: "absolute"
           }}
         />
       </div>
+      <br></br>
       Click to upload Profile Image
+      <form>
+        <h2>Name:</h2>
+        <input type="text"></input>
+        <h2>Date of Birth:</h2>
+        <input type="text"></input>
+      </form>
     </div>
-
-
   );
 }
 
